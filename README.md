@@ -1,7 +1,5 @@
 # 📚 EduMart - A Book Reselling Platform for Students
 
-![EduMart Logo](https://your-logo-url.com/logo.png) <!-- Replace with your logo URL -->
-
 Welcome to **EduMart**, a unique platform designed exclusively for students to buy and sell books directly, without third-party sellers. Our goal is to create an efficient and user-friendly marketplace that connects students in need of textbooks with those looking to sell them.
 
 ---
