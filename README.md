@@ -3,4 +3,4 @@ EduMart is a book reselling platform exclusively designed for students, built us
 
 ---
 
-# The code is in master branch
+The code is in master branch
