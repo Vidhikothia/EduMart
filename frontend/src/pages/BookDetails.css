@@ -1,0 +1,139 @@
+/* Define root variables for easy theme switching */
+:root {
+  --background-color: rgb(250, 223, 244); /* Light neutral background */
+  --card-background: white;
+  --text-color: #34495e;
+  --highlight-color: #2980b9;
+  --button-background: #007bff;
+  --button-hover-background: #0056b3;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-hover-color: rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode {
+  --background-color: #121212; /* Dark mode background */
+  --card-background: #1e1e1e;
+  --text-color: #e0e0e0;
+  --highlight-color: #bb86fc; /* Dark mode highlight color */
+  --button-background: #bb86fc;
+  --button-hover-background: #9b51e0;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --shadow-hover-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Basic background color for the whole page */
+.book-details-page {
+  background-color: rgb(250, 223, 244); /* Light neutral background */
+  padding: 40px 0;
+  min-height: 100vh; /* Ensure full screen height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Flex container for the two sections (book image and details) */
+.book-details-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw; /* Occupy 80% of the viewport width */
+  gap: 30px; /* Space between the image and details */
+}
+
+/* Book photo section */
+.book-photo {
+  flex: 1;
+  max-width: 50%; /* Take up 50% of the container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the image */
+.book-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure image fits without distortion */
+  max-height: 500px; /* Limit image height */
+}
+
+/* Book details section */
+.book-detail {
+  flex: 1;
+  padding-top: 20px;
+  max-width: 50%; /* Take up 50% of the container width */
+}
+
+/* Font styling for the book details */
+.book-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size:1.6em;
+}
+
+.book-detail p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  margin: 10px 0;
+  font-family: 'Lora', serif; /* Elegant font for details */
+  color: #34495e;
+}
+
+/* Make bold and underline specific important texts */
+.book-price strong, .book-author strong, .book-description strong, 
+.book-seller strong, .book-seller-phone strong {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2980b9; /* Highlighted color */
+}
+
+.buy-book-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6b1c5f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-book-button:hover {
+  background-color: #a32a91;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .book-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-photo, .book-detail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .book-image {
+    max-height: 300px; /* Smaller image for smaller screens */
+  }
+}
+
+
+.backbutton {
+  background-color: #5d0d48;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.backbutton:hover {
+  background-color: #7e155e;
+}
